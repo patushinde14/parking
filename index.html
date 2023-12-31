@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Parkme</title>
+
+
+    <link rel="stylesheet" href="pra.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"> <i class="sopt"></i>SpotHunt</a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="abc"></div>
+            <a href="index.html">home</a>
+            <a href="about us.html">about</a>
+            <a href="Parking Safety Tips.html">Safety tips</a>
+            <a href="contact.html">Contat us</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="pqr"></div>
+        </div>
+
+    </header>
+
+    <section class="home">
+
+        <div class="content">
+
+            <h1> Unlock Your Parking Potential...</h1>
+            <input type="text" id="city" name="city" placeholder="Select Your Current Location...">
+            <button class="btn" onclick="jaga()">Nearby Parking</button>
+
+        </div>
+
+        <div class="img">
+            <img src="home.png" width="800px" height="600px">
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="#" alt="">
+                <h3>address</h3>
+                <p>satara,maharastra 415001</p>
+
+            </div>
+
+            <div class="box">
+                <img src="#" alt="">
+                <h3>E-mail</h3>
+                <a href="#" class="link">parkme@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Call us</h3>
+                <p>+91 7987678909</p>
+            </div>
+
+            <div class="box">
+                <img src="#" alt="">
+                <h3>contact us</h3>
+                <a href="contact.html">Contat us</a>
+                <p>
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
+
+<script>
+
+    const jaga = () => {
+
+        let l = document.getElementById('city').value;
+
+        let src = `https://www.google.com/maps/search/nearbyparking+${l}/@17.6817678,74.0186853,14z/data=!3m1!4b1?entry=ttu`;
+
+        window.location.href = src;
+
+    }
+</script>
